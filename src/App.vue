@@ -24,7 +24,7 @@
   <router-view />
   <p></p>
   <p class='menu-item'>Github repository: </p>
-  <p class= 'menu-item'> https://github.com/tylerharris803/SocialMedia.git --- Click <a href='https://github.com/tylerharris803/SocialMedia.git'>here</a></p>
+  <p class= 'menu-item'> https://github.com/tylerharris803/Commons.git --- Click <a href='https://github.com/tylerharris803/Commons.git'>here</a></p>
   <p class='menu-item'> This project took: 14+ hours (CP4 and CP5)</p>
 </div>
 </template>
