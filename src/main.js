@@ -5,7 +5,9 @@ import router from './router'
 Vue.config.productionTip = false
 
 let data = {
+  profiles: [],
   friends: [],
+  user: null
 }
 
 //   getPosts() {

@@ -7,21 +7,25 @@
       </router-link>
     </div>
     <div id="side">
-      <router-link to="/profile">
-        <div class="menu-item">
-          <p>Profile --- </p>
-        </div>
-      </router-link>
       <router-link to="/">
+        <img src="/images/Home_icon_black.png">
         <div class="menu-item">
-          <p> -- Users</p>
+          <p> Home</p>
         </div>
       </router-link>
     </div>
+    <div id="side" class="user">
+  <router-link to="/dashboard">
+  <img src="/images/menu-icon.png">
+  <p class="menu-item"> You</p>
+  </router-link>
+    </div>
   </div>
   <router-view />
+  <p></p>
   <p class='menu-item'>Github repository: </p>
   <p class= 'menu-item'> https://github.com/tylerharris803/SocialMedia.git --- Click <a href='https://github.com/tylerharris803/SocialMedia.git'>here</a></p>
+  <p class='menu-item'> This project took: 14+ hours (CP4 and CP5)</p>
 </div>
 </template>
 
@@ -52,7 +56,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 5px;
   grid-template-areas: "none brand side";
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 
 #menu a {
@@ -77,6 +81,7 @@ body {
 
 #side img {
   width: 50px;
+
 }
 
 .menu-item {
@@ -87,7 +92,9 @@ body {
 .menu-item p {
   margin: 0px;
 }
-
+.user{
+  padding-right: 70px;
+}
 .browse {
   margin-right: 50px;
 }
