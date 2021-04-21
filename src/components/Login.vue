@@ -4,12 +4,16 @@
     <form class="pure-form">
       <fieldset>
         <legend>Register for an account</legend>
+        <div class="space-below">
         <input placeholder="first name" v-model="firstName">
         <input placeholder="last name" v-model="lastName">
+      </div>
       </fieldset>
       <fieldset>
+        <div class="space-below">
         <input placeholder="username" v-model="username">
         <input type="password" placeholder="password" v-model="password">
+      </div>
       </fieldset>
       <fieldset>
         <button type="submit" class="pure-button pure-button-primary" @click.prevent="register">Register</button>
@@ -19,8 +23,10 @@
     <form class="pure-form space-above">
       <fieldset>
         <legend>Login</legend>
+        <div class="space-below">
         <input placeholder="username" v-model="usernameLogin">
         <input type="password" placeholder="password" v-model="passwordLogin">
+      </div>
       </fieldset>
       <fieldset>
         <button type="submit" class="pure-button pure-button-primary" @click.prevent="login">Login</button>
@@ -91,6 +97,9 @@ export default {
 .space-above {
   margin-top: 50px;
 }
+.space-below {
+  margin-bottom: 20px;
+}
 
 h1 {
   font-size: 28px;
@@ -99,7 +108,7 @@ h1 {
 
 .hero {
   background-color: lightblue;
-  padding: 120px;
+  padding: 80px;
   display: flex;
   justify-content: center;
 }
